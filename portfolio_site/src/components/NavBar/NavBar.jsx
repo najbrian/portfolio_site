@@ -22,10 +22,10 @@ const NavBar = () => {
   }
 
   return (
-    <div className='font-montserrat bg-pastelBrown fixed top-0 w-full z-50 flex'>
-      <div className='font-montserrat bg-pastelBrown fixed top-0 w-full z-50 flex justify-between items-center h-16'>
+    <div className='font-montserrat fixed top-0 w-full z-50 flex'>
+      <div className='font-montserrat fixed top-0 w-full z-50 flex justify-between items-center h-16 border-b-2 border-black'>
         <div className='bg-black flex items-center h-full'>
-          <h1 onClick={() => { navigate('/') }} className='text-3xl font-bold ml-5 mr-5 text-pastelBrown hover:animate-spin cursor-pointer'>BN</h1>
+          <h1 onClick={() => { navigate('/') }} className='text-3xl font-bold ml-5 mr-5 text-cream hover:animate-spin cursor-pointer'>BN</h1>
         </div>
 
         <div className="flex justify-center items-center gap-5 mr-5">
