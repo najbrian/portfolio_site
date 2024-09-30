@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <div className='text-center mt-5'>
       <div className='text-4xl font-bold mb-5'>
-        <h1>Brian's Projects</h1>
+        <h1 className='text-white'>Projects</h1>
       </div>
       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5'>
         <div className='relative w-full group'>

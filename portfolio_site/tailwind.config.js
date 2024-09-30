@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'clamped': 'clamp(1rem, 3vw, 5rem)',
+        'clamped2': 'clamp(1rem, 2vw, 5rem)',
+        'aboutme': 'clamp(1rem, 1vw, 5rem)'
+      },
       colors: {
         pastelGreen: '#C0C78C',
         moss: '#A6B37D',

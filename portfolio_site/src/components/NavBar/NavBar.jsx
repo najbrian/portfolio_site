@@ -23,15 +23,19 @@ const NavBar = () => {
 
   return (
     <div className='font-montserrat fixed top-0 w-full z-50 flex'>
-      <div className='font-montserrat fixed top-0 w-full z-50 flex justify-between items-center h-16 border-b-2 border-black'>
+      <div className='font-montserrat fixed top-0 w-full z-50 flex justify-between items-center h-16 border-b-2 border-black bg-white'>
         <div className='bg-black flex items-center h-full'>
-          <h1 onClick={() => { navigate('/') }} className='text-3xl font-bold ml-5 mr-5 text-cream hover:animate-spin cursor-pointer'>BN</h1>
+          <h1 onClick={() => { navigate('/') }} className='text-3xl font-bold ml-5 mr-5 text-white hover:animate-spin cursor-pointer'>BN</h1>
+        </div>
+
+        <div className='flex justify-center items-center gap-5'>
+          <Link className="text-xl hover:animate-jump hover:font-bold transition duration-300" to="/">Home</Link>
+          <Link className="text-xl hover:animate-jump hover:font-bold transition duration-300" to="/about-me">About Me</Link>
+          <Link className="text-xl hover:animate-jump hover:font-bold transition duration-300" to='/projects'>Projects</Link>
         </div>
 
         <div className="flex justify-center items-center gap-5 mr-5">
-          <Link className="text-3xl hover:animate-jump hover:font-bold transition duration-300" to="/">Home</Link>
-          <Link className="text-3xl hover:animate-jump hover:font-bold transition duration-300" to="/about-me">About Me</Link>
-          <Link className="text-3xl hover:animate-jump hover:font-bold transition duration-300" to='/projects'>Projects</Link>
+
           <div className='ml-10'>
             <Button className="hover:animate-jump hover:font-bold transition duration-300"
               id="basic-button"
@@ -39,7 +43,7 @@ const NavBar = () => {
               aria-haspopup="true"
               aria-expanded={open ? 'true' : undefined}
               onClick={handleClick}
-              sx={{fontSize:'1.5rem', color:'black'}}
+              sx={{ fontSize: '1rem', color: 'black' }}
             >
               Contacts
             </Button>
@@ -52,9 +56,9 @@ const NavBar = () => {
                 'aria-labelledby': 'basic-button',
               }}
             >
-              <MenuItem onClick={handleClose}><a href='https://www.linkedin.com/in/nabrian/' target="_blank"><LinkedInIcon />nabrian</a></MenuItem>
-              <MenuItem onClick={handleClose}><a href='https://github.com/najbrian' target='_blank'><GitHubIcon />najbrian</a></MenuItem>
-              <MenuItem onClick={handleClose}><a href='mailto:najbrian@gmail.com' target='_blank'><EmailIcon />najbrian@gmail.com</a></MenuItem>
+              <MenuItem onClick={handleClose}><a href='https://www.linkedin.com/in/nabrian/' target="_blank"><LinkedInIcon className='mr-1'/>nabrian</a></MenuItem>
+              <MenuItem onClick={handleClose}><a href='https://github.com/najbrian' target='_blank'><GitHubIcon className='mr-1'/>najbrian</a></MenuItem>
+              <MenuItem onClick={handleClose}><a href='mailto:najbrian@gmail.com' target='_blank'><EmailIcon className='mr-1'/>najbrian@gmail.com</a></MenuItem>
             </Menu>
           </div>
         </div>

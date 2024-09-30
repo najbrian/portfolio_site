@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #FEFAE0;
+  /* background-color: #FEFAE0; */
   /* background-image: url('../src/assets/bna_logo.png');
   background-position: center;
   background-repeat: no-repeat;
